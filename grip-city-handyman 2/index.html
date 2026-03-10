@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Grip City Handyman — Portland's trusted home repair experts. Licensed, bonded & insured. Serving the Portland metro area.">
+  <meta name="keywords" content="handyman Portland, home repair Portland, licensed handyman, Grip City Handyman">
+  <meta property="og:title" content="Grip City Handyman | Portland's Trusted Home Repair">
+  <meta property="og:description" content="Licensed, bonded & insured. Serving Portland metro since 2014.">
+  <meta property="og:type" content="website">
+  <title>Grip City Handyman | Portland's Trusted Home Repair Experts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobile()" aria-label="Close menu">✕</button>
+    <nav class="mobile-nav">
+      <a href="#services" onclick="closeMobile()">Services</a>
+      <a href="#gallery" onclick="closeMobile()">Our Work</a>
+      <a href="#process" onclick="closeMobile()">How We Work</a>
+      <a href="#reviews" onclick="closeMobile()">Reviews</a>
+      <a href="#area" onclick="closeMobile()">Service Area</a>
+    </nav>
+    <div class="mobile-cta">
+      <a href="tel:9716662625">📞 (971) 666-2625</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-top">
+      <div class="header-top-inner">
+        <span>Portland's Most Trusted Handyman — Licensed, Bonded &amp; Insured</span>
+        <a href="tel:9716662625">(971) 666-2625</a>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="header-main-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.1L5.63 12.8L2.11 9.28L2.81 8.58H5.66L4.22 7.14L7.78 3.58C8.95 2.41 10.74 2.24 12.12 3.08L9.71 5.5L11.83 7.61L14.24 5.19C15.09 6.57 14.92 8.38 13.75 9.55C13.34 9.95 12.62 10.1 12.1 10.1H17.5Z"/></svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-name">Grip City</div>
+            <div class="logo-tag">Handyman</div>
+          </div>
+        </a>
+        <nav>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#gallery" class="nav-link">Our Work</a>
+          <a href="#process" class="nav-link">How We Work</a>
+          <a href="#reviews" class="nav-link">Reviews</a>
+          <a href="#area" class="nav-link">Service Area</a>
+          <a href="pages/admin.html" class="nav-link admin-link">Admin</a>
+        </nav>
+        <div class="header-cta">
+          <a href="tel:9716662625" class="btn-phone">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+            <span>(971) 666-2625</span>
+          </a>
+          <button class="hamburger" onclick="openMobile()" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-accent"></div>
+      <div class="bp-overlay" id="bpOverlay"></div>
+      <div class="hero-inner container">
+        <div class="hero-content">
+          <div class="hero-badge"><span></span>Portland, Oregon</div>
+          <h1 class="hero-title">Portland's<br><em>Trusted</em> Handymen</h1>
+          <p class="hero-sub">From small repairs to full renovations — we show up on time, do the job right, and leave your home better than we found it.</p>
+          <div class="hero-actions">
+            <a href="tel:9716662625" class="btn-primary">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+              Free Quote
+            </a>
+            <a href="#services" class="btn-outline">See Services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>500+</strong><span>Projects Done</span></div>
+            <div class="hero-stat"><strong>4.9★</strong><span>Google Rating</span></div>
+            <div class="hero-stat"><strong>10+</strong><span>Years Serving PDX</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Handyman at work" loading="eager">
+            <div class="hero-img-overlay"></div>
+            <div class="hero-card">
+              <div class="hero-card-avatar">S</div>
+              <div class="hero-card-text">
+                <div class="hero-card-stars">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <strong>"Incredible work on our kitchen!"</strong>
+                <span>Sarah M. — Portland, OR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="hero-shape" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,80 L0,40 Q360,0 720,40 Q1080,80 1440,40 L1440,80 Z"/></svg>
+    </section>
+
+    <!-- TRUST BANNER -->
+    <section id="trust">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
+          <div class="trust-text"><strong>Licensed &amp; Insured</strong><span>Fully covered for your peace of mind</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+          <div class="trust-text"><strong>Quality Guaranteed</strong><span>Skilled craftsmen, every project</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
+          <div class="trust-text"><strong>On-Time Always</strong><span>We respect your schedule</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+          <div class="trust-text"><strong>Locally Trusted</strong><span>Serving Portland metro since 2014</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="services-inner">
+          <div class="services-left">
+            <span class="section-label">What We Do</span>
+            <h2 class="section-title">Every Home Repair, Done Right</h2>
+            <p class="section-sub">Whatever your home needs — big or small — our skilled team handles it all with care and precision.</p>
+            <div class="services-grid" style="margin-top:36px">
+              <a href="tel:9716662625" class="service-card reveal">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.1L5.63 12.8L2.11 9.28L2.81 8.58H5.66L4.22 7.14L7.78 3.58C8.95 2.41 10.74 2.24 12.12 3.08L9.71 5.5L11.83 7.61L14.24 5.19C15.09 6.57 14.92 8.38 13.75 9.55C13.34 9.95 12.62 10.1 12.1 10.1H17.5Z"/></svg></div>
+                <div class="service-name">Home Repair</div>
+              </a>
+              <a href="tel:9716662625" class="service-card reveal reveal-delay-1">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14 6l-1-2H5v17h2v-7h5l1 2h7V6h-6zm4 8h-4l-1-2H7V6h5l1 2h5v6z"/></svg></div>
+                <div class="service-name">Painting</div>
+              </a>
+              <a href="tel:9716662625" class="service-card reveal reveal-delay-2">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/></svg></div>
+                <div class="service-name">Drywall &amp; Ceiling</div>
+              </a>
+              <a href="tel:9716662625" class="service-card reveal reveal-delay-1">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 16v4h4l10.4-10.4-4-4L4 16zm19.3-11.3c.4-.4.4-1 0-1.4l-2.6-2.6c-.4-.4-1-.4-1.4 0l-2 2 4 4 2-2z"/></svg></div>
+                <div class="service-name">Carpentry</div>
+              </a>
+              <a href="tel:9716662625" class="service-card reveal reveal-delay-2">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M17,12C17,14.42 15.28,16.44 13,16.9V21H11V16.9C8.72,16.44 7,14.42 7,12C7,9.58 8.72,7.56 11,7.1V3H13V7.1C15.28,7.56 17,9.58 17,12M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg></div>
+                <div class="service-name">Plumbing</div>
+              </a>
+              <a href="tel:9716662625" class="service-card reveal reveal-delay-3">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14v-8z"/></svg></div>
+                <div class="service-name">Electrical</div>
+              </a>
+              <a href="tel:9716662625" class="service-card reveal reveal-delay-2">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 17h18v2H3v-2zm0-7h18v5H3v-5zm0-4h18v2H3V6z"/></svg></div>
+                <div class="service-name">Flooring</div>
+              </a>
+              <a href="tel:9716662625" class="service-card reveal reveal-delay-3">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
+                <div class="service-name">Remodeling</div>
+              </a>
+            </div>
+            <div style="margin-top:28px">
+              <a href="tel:9716662625" class="btn-primary">Get a Free Quote</a>
+            </div>
+          </div>
+          <div class="services-img reveal reveal-delay-2">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Handyman services" loading="lazy">
+            <div class="services-img-badge">Portland's #1 Rated</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE/AFTER GALLERY -->
+    <section id="gallery">
+      <div class="bp-overlay" id="bpOverlay2"></div>
+      <div class="container" style="position:relative;z-index:2">
+        <div class="gallery-header reveal">
+          <span class="section-label" style="color:var(--gold)">Our Work</span>
+          <h2 class="section-title white">Before &amp; After</h2>
+          <p class="section-sub" style="color:rgba(255,255,255,0.55);margin:0 auto">Drag the slider to see the transformation. Real projects, real results.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="reveal">
+            <div class="slider-wrap" id="slider1">
+              <img class="slider-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="After kitchen">
+              <div class="slider-before-wrap" id="before1"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80" alt="Before kitchen" style="width:200%"></div>
+              <div class="slider-handle" id="handle1"><div class="slider-btn"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:var(--red)"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" transform="scale(-1,1) translate(-24,0)"/></svg></div></div>
+              <div class="slider-label label-before">Before</div>
+              <div class="slider-label label-after">After</div>
+            </div>
+            <div class="gallery-caption">Kitchen Remodel</div>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <div class="slider-wrap" id="slider2">
+              <img class="slider-img" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="After bathroom">
+              <div class="slider-before-wrap" id="before2"><img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=80" alt="Before bathroom" style="width:200%"></div>
+              <div class="slider-handle" id="handle2"><div class="slider-btn"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:var(--red)"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" transform="scale(-1,1) translate(-24,0)"/></svg></div></div>
+              <div class="slider-label label-before">Before</div>
+              <div class="slider-label label-after">After</div>
+            </div>
+            <div class="gallery-caption">Bathroom Renovation</div>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="slider-wrap" id="slider3">
+              <img class="slider-img" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="After painting">
+              <div class="slider-before-wrap" id="before3"><img src="https://images.unsplash.com/photo-1523413363574-c43a0f6a07ba?w=800&q=80" alt="Before painting" style="width:200%"></div>
+              <div class="slider-handle" id="handle3"><div class="slider-btn"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:var(--red)"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" transform="scale(-1,1) translate(-24,0)"/></svg></div></div>
+              <div class="slider-label label-before">Before</div>
+              <div class="slider-label label-after">After</div>
+            </div>
+            <div class="gallery-caption">Interior Painting</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="container">
+        <div class="process-header reveal">
+          <span class="section-label">Simple Process</span>
+          <h2 class="section-title">How We Work</h2>
+          <p class="section-sub" style="margin:0 auto">Four easy steps from first call to finished project.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-connector"></div>
+          <div class="process-step reveal">
+            <span class="process-num">Step 01</span>
+            <div class="process-icon-wrap active" id="picon0">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+            </div>
+            <h3>Contact Us</h3>
+            <p>Call or message us to discuss your project and get a free no-obligation quote.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-1">
+            <span class="process-num">Step 02</span>
+            <div class="process-icon-wrap" id="picon1">
+              <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+            </div>
+            <h3>Discuss Project</h3>
+            <p>We walk through your needs, assess scope, and give you an honest price.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <span class="process-num">Step 03</span>
+            <div class="process-icon-wrap" id="picon2">
+              <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+            </div>
+            <h3>Schedule Service</h3>
+            <p>Pick a time that works. We arrive on time, every time — guaranteed.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <span class="process-num">Step 04</span>
+            <div class="process-icon-wrap" id="picon3">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <h3>Work Completed</h3>
+            <p>Job done to the highest standard. We clean up, you enjoy the results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews">
+      <div class="container">
+        <div class="reviews-header">
+          <div>
+            <span class="section-label">What People Say</span>
+            <h2 class="section-title">Trusted by Portland Homeowners</h2>
+          </div>
+          <div class="google-badge reveal">
+            <div class="google-badge-score">4.9</div>
+            <div class="google-badge-info">
+              <div class="stars-row">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span>200+ Google Reviews</span>
+              <a href="https://www.google.com/search?q=Grip+City+Handyman" target="_blank" rel="noopener" style="color:var(--gold);font-size:12px;font-weight:700;text-decoration:none">See All Reviews →</a>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card reveal">
+            <div class="review-top"><div class="review-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><div class="review-quote">"</div></div>
+            <p class="review-text">Grip City Handyman did an amazing job on our kitchen remodel. Professional, on time, and the quality exceeded our expectations!</p>
+            <div class="review-author"><div class="review-avatar">S</div><div><div class="review-name">Sarah M.</div><div class="review-loc">Portland, OR</div></div></div>
+          </div>
+          <div class="review-card reveal reveal-delay-1">
+            <div class="review-top"><div class="review-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><div class="review-quote">"</div></div>
+            <p class="review-text">Called for a last-minute plumbing issue and they showed up the same day. Fixed everything quickly at a very fair price.</p>
+            <div class="review-author"><div class="review-avatar">J</div><div><div class="review-name">James K.</div><div class="review-loc">Beaverton, OR</div></div></div>
+          </div>
+          <div class="review-card reveal reveal-delay-2">
+            <div class="review-top"><div class="review-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><div class="review-quote">"</div></div>
+            <p class="review-text">Used them for multiple projects — drywall, painting, and trim work. Always reliable. Our permanent go-to handyman service.</p>
+            <div class="review-author"><div class="review-avatar">L</div><div><div class="review-name">Linda P.</div><div class="review-loc">Lake Oswego, OR</div></div></div>
+          </div>
+          <div class="review-card reveal reveal-delay-3">
+            <div class="review-top"><div class="review-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><div class="review-quote">"</div></div>
+            <p class="review-text">Excellent carpentry work on our custom shelving. They understood exactly what we wanted and delivered beautifully.</p>
+            <div class="review-author"><div class="review-avatar">M</div><div><div class="review-name">Mike R.</div><div class="review-loc">Tigard, OR</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA -->
+    <section id="area">
+      <div class="bp-overlay" id="bpOverlay3"></div>
+      <div class="container" style="position:relative;z-index:2">
+        <div class="area-inner">
+          <div>
+            <span class="section-label" style="color:var(--gold)">Where We Work</span>
+            <h2 class="section-title white">Serving the Portland Metro Region</h2>
+            <p class="section-sub" style="color:rgba(255,255,255,0.55)">From Portland proper to the surrounding suburbs — if you're in the metro, we've got you covered.</p>
+            <div class="area-badges">
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Portland</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Beaverton</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Hillsboro</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Gresham</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Tigard</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Lake Oswego</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Vancouver, WA</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Milwaukie</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Oregon City</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Tualatin</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>West Linn</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Sherwood</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Happy Valley</div>
+              <div class="area-badge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Clackamas</div>
+            </div>
+          </div>
+          <div class="area-cta-box reveal">
+            <h3>Not Sure If We Cover Your Area?</h3>
+            <p>Give us a call and we'll let you know right away. We're always expanding and happy to help wherever we can.</p>
+            <a href="tel:9716662625" class="btn-primary">
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:white"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+              Call (971) 666-2625
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="cta-bg-text">GET IT DONE</div>
+      <div class="container cta-inner reveal">
+        <h2>Ready to Start Your Project?</h2>
+        <p>From minor repairs to major renovations. Call today for a free consultation — no pressure, no obligation.</p>
+        <a href="tel:9716662625" class="btn-white">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+          (971) 666-2625
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="margin-bottom:16px;display:inline-flex">
+            <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.1L5.63 12.8L2.11 9.28L2.81 8.58H5.66L4.22 7.14L7.78 3.58C8.95 2.41 10.74 2.24 12.12 3.08L9.71 5.5L11.83 7.61L14.24 5.19C15.09 6.57 14.92 8.38 13.75 9.55C13.34 9.95 12.62 10.1 12.1 10.1H17.5Z"/></svg></div>
+            <div class="logo-text"><div class="logo-name">Grip City</div><div class="logo-tag">Handyman</div></div>
+          </a>
+          <p>Portland's trusted handyman service. Licensed, bonded, and insured. Serving the metro area since 2014.</p>
+          <a href="tel:9716662625" class="footer-phone"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>(971) 666-2625</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="tel:9716662625">Home Repair</a></li>
+            <li><a href="tel:9716662625">Painting</a></li>
+            <li><a href="tel:9716662625">Drywall &amp; Ceiling</a></li>
+            <li><a href="tel:9716662625">Flooring</a></li>
+            <li><a href="tel:9716662625">Plumbing</a></li>
+            <li><a href="tel:9716662625">Electrical</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#process">How We Work</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#gallery">Our Work</a></li>
+            <li><a href="#area">Service Area</a></li>
+            <li><a href="tel:9716662625">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service Area</h4>
+          <ul>
+            <li><a href="#area">Portland</a></li>
+            <li><a href="#area">Beaverton</a></li>
+            <li><a href="#area">Hillsboro</a></li>
+            <li><a href="#area">Tigard</a></li>
+            <li><a href="#area">Lake Oswego</a></li>
+            <li><a href="#area">Vancouver, WA</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="yr"></span> Grip City Handyman. All rights reserved. Licensed &amp; Insured.</p>
+        <a href="pages/admin.html">Admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* ============================================================
+   Grip City Handyman — Admin Styles
+   css/admin.css
+   ============================================================ */
+
+/* ----- ADMIN SHARED INPUTS / BUTTONS ----- */
+.admin-input,
+.admin-textarea,
+.admin-select {
+  width: 100%; background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;
+  color: white; font-family: var(--font-body); font-size: 14px;
+  padding: 12px 14px; outline: none; transition: border 0.2s;
+}
+.admin-input:focus,
+.admin-textarea:focus,
+.admin-select:focus { border-color: var(--red); }
+.admin-textarea { min-height: 90px; resize: vertical; }
+.admin-select option { background: #0B1E38; color: white; }
+
+.admin-field { margin-bottom: 18px; }
+.admin-field label {
+  display: block; font-size: 12px; font-weight: 700;
+  color: rgba(255,255,255,0.5); letter-spacing: 1px;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+
+.admin-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.admin-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+
+.btn-save {
+  background: var(--gold); color: var(--navy); border: none;
+  font-family: var(--font-head); font-size: 16px; font-weight: 900;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 14px 28px; border-radius: 8px; cursor: pointer;
+  transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-save:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(245,166,35,0.35); }
+.btn-save svg { width: 16px; height: 16px; fill: var(--navy); }
+
+.admin-saved { display: none; align-items: center; gap: 8px; color: #2ECC71; font-size: 14px; font-weight: 600; }
+.admin-saved.show { display: flex; }
+
+.admin-section-title {
+  font-family: var(--font-head); font-size: 18px; font-weight: 800;
+  color: white; text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: 20px; padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ----- ESTIMATOR SUMMARY ----- */
+.estimator-summary {
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px; padding: 24px; margin-top: 24px;
+}
+.est-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 14px; color: rgba(255,255,255,0.6); }
+.est-row:last-child { border-bottom: none; }
+.est-divider { height: 1px; background: rgba(255,255,255,0.1); margin: 12px 0; }
+.est-total       { font-family: var(--font-head); font-size: 28px; font-weight: 900; color: var(--gold); }
+.est-total-label { font-family: var(--font-head); font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; }
+
+/* ----- ADMIN PAGE (pages/admin.html) ----- */
+.admin-page {
+  min-height: 100vh; background: #060F1C;
+  font-family: var(--font-body); color: white; padding: 40px 0;
+}
+.admin-page-wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+.admin-page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; }
+.admin-page-header h1 { font-family: var(--font-head); font-size: 32px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+.admin-back { color: rgba(255,255,255,0.5); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.2s; }
+.admin-back:hover { color: white; border-color: rgba(255,255,255,0.3); }
+.admin-back svg { width: 14px; height: 14px; fill: currentColor; }
+
+.admin-tabs { display: flex; gap: 8px; margin-bottom: 28px; background: rgba(255,255,255,0.04); padding: 6px; border-radius: 10px; }
+.admin-tab { flex: 1; background: none; border: none; color: rgba(255,255,255,0.5); font-family: var(--font-head); font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 10px; border-radius: 7px; cursor: pointer; transition: all 0.2s; }
+.admin-tab.active { background: var(--red); color: white; }
+
+.admin-panel { display: none; }
+.admin-panel.active { display: block; }
+
+/* ----- LOGIN CARD ----- */
+.admin-login-card { max-width: 380px; margin: 60px auto 0; text-align: center; }
+.admin-login-logo { font-family: var(--font-head); font-size: 28px; font-weight: 900; color: white; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.admin-login-sub  { color: rgba(255,255,255,0.4); font-size: 13px; margin-bottom: 32px; }
+.login-error { display: none; background: rgba(217,43,43,0.15); border: 1px solid rgba(217,43,43,0.3); color: #FF6B6B; font-size: 13px; padding: 10px 14px; border-radius: 8px; margin-bottom: 12px; }
+.login-error.show { display: block; }
+
+@media (max-width: 600px) {
+  .admin-grid-2, .admin-grid-3 { grid-template-columns: 1fr; }
+}
